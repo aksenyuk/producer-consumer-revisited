@@ -24,7 +24,6 @@ void* producer(void *idx) {
         sem_wait(&sem_empty);
         pthread_mutex_lock(&mutex);
         buffer[prod_idx] = num;
-        prod_idx++;
         prod_idx = (prod_idx + 1) % buf_size;
         pthread_mutex_unlock(&mutex);
         sem_post(&sem_full);
@@ -37,7 +36,6 @@ void* consumer(void *idx) {
         sem_wait(&sem_full);
         pthread_mutex_lock(&mutex);
         int num = buffer[cons_idx];
-        cons_idx++;
         printf("Consumer no.%d consumed: %d\n", i, num);
         cons_idx = (cons_idx + 1) % buf_size;
         pthread_mutex_unlock(&mutex);
