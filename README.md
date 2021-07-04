@@ -1,7 +1,7 @@
 #                                                                            OS&CP Project A.2
 #                                                          PUT Poznań, AI, Semester 2, Sofya Aksenyuk, 150284.
 
-The supplied "OSCP_A2" file presents the solution to the multi-process synchronization problem called Producer-Consumer problem. 
+The supplied "OSCP_A2.c" file presents the solution to the multi-process synchronization problem called Producer-Consumer problem. 
 
 The essence of the problem is as follows: The producer and the consumer share the same initially fixed-size buffer. The producer is on charge of generating data that will be added to the buffer, whereas the consumer removed that data from the buffer one by one. To get an access for "entering" this buffer both - producer and consumer - has to wait for the specific sign (i.e., the state of buffer which controls by the function "sem_wait") to prevent producer adding data to already full buffer or consumer trying to remove data from the empty buffer.
 
