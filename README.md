@@ -1,5 +1,5 @@
-# OS&CP Project A.2
-PUT Poznań, AI, Semester 2, OS&CP Project A.2, made by Sofya Aksenyuk, 150284.
+#                                                                            OS&CP Project A.2
+#                                                          PUT Poznań, AI, Semester 2, Sofya Aksenyuk, 150284.
 
 The supplied "OS-CP-Project-A.2" file presents the solution to the multi-process synchronization problem called Producer-Consumer problem. 
 
@@ -9,4 +9,5 @@ As the solution, the semaphore approach was used: two semaphores (namely, "sem_e
 In "main" function "pthread_create" and "pthread_join" functions were used to starts a new thread in the calling process and then make the calling thread wait till the newly created thread returns.
 
 Here is an example of the programm execution where the produced and consumed items can be checked:
+
 ![execution example](https://user-images.githubusercontent.com/86928699/124398318-66949f80-dd15-11eb-990e-cf0ad7a5d28f.jpg)
