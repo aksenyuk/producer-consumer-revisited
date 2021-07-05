@@ -16,9 +16,9 @@ In `main` function `pthread_create` and `pthread_join` functions were used to st
 * To run the program you have to execute the file named `Makefile.txt` in a following way: 
 ```
 make -f Makefile.txt
-./A2
+./A2 no.of Producers no.of Consumers
 ```
 
 * Here is an example of the programm execution where the produced and consumed items can be checked:
 
-![execution](https://user-images.githubusercontent.com/86928699/124407808-1b928080-dd45-11eb-8a30-b49ac1026df8.jpg)
+![example](https://user-images.githubusercontent.com/86928699/124457132-c62d9200-dd8b-11eb-951a-78a92f2c104d.jpg)
