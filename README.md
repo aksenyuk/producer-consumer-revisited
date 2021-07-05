@@ -8,6 +8,9 @@ The essence of the problem is as follows: The producer and the consumer share th
 As the solution, the semaphore approach was used: two semaphores (namely, "sem_empty" and "sem_full") control the state of buffer, then waiting and awakening threads ("pthread_mutex_lock" and "pthread_mutex_unlock", subsequently) "tell" the producer or the consumer if it is the time to proceed further actions (is the mutex locked or unlocked).
 In "main" function "pthread_create" and "pthread_join" functions were used to starts a new thread in the calling process and then make the calling thread wait till the newly created thread returns.
 
+To run the program you have to execute the file named "Makefile.txt" in a following way:  make -f Makefile.txt
+                                                                                          ./A2
+
 The following pseudocode was used as a base:
 
 ![pseudocode](https://user-images.githubusercontent.com/86928699/124405402-d23f3280-dd3e-11eb-9092-c44e1ca61fdf.jpg)
