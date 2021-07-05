@@ -36,7 +36,6 @@ void* consumer(void *idx) {
         sem_wait(&sem_full);
         pthread_mutex_lock(&mutex);
         int num = buffer[cons_idx];
-
         printf("Consumer no.%d consumed: %d\n", i, num);
         cons_idx = (cons_idx + 1) % buf_size;
         pthread_mutex_unlock(&mutex);
