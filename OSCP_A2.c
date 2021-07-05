@@ -36,6 +36,7 @@ void* consumer(void *idx) {
         sem_wait(&sem_full);
         pthread_mutex_lock(&mutex);
         int num = buffer[cons_idx];
+
         printf("Consumer no.%d consumed: %d\n", i, num);
         cons_idx = (cons_idx + 1) % buf_size;
         pthread_mutex_unlock(&mutex);
@@ -44,13 +45,12 @@ void* consumer(void *idx) {
     }
 }
 
-int main() {
+int main(int argc, char* argv[]) {
     srand(time(0));
+    
     int num_prod, num_cons;
-    printf("Enter the number of Producers: ");
-    scanf("%d", &num_prod);
-    printf("Enter the number of Consumers: ");
-    scanf("%d", &num_cons);
+    num_prod = atoi(argv[1]);
+    num_cons = atoi(argv[2]);
 
     pthread_t prod[num_prod], cons[num_cons];
     pthread_mutex_init(&mutex, NULL);
@@ -77,4 +77,3 @@ int main() {
 
     return 0;
 }
-
