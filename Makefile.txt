@@ -1,4 +1,5 @@
 A2: OSCP_A2.c
 	@gcc -o A2 OSCP_A2.c -lpthread
+	$(info Enter the data in a following way: ./A2 no.of Producers no.of Consumers)
 clean:
 	rm A2
