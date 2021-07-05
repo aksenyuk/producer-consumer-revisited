@@ -21,4 +21,4 @@ make -f Makefile.txt
 
 * Here is an example of the programm execution where the produced and consumed items can be checked:
 
-![execution example](https://user-images.githubusercontent.com/86928699/124398318-66949f80-dd15-11eb-990e-cf0ad7a5d28f.jpg)
+![execution](https://user-images.githubusercontent.com/86928699/124407808-1b928080-dd45-11eb-8a30-b49ac1026df8.jpg)
