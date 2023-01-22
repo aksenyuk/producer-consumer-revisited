@@ -1,6 +1,4 @@
-# OS&CP Project
-## A.2 The producer-consumer problem revisited
-#### PUT Poznań, AI, Semester 2, Sofya Aksenyuk, 150284.
+# The producer-consumer problem revisited
 
 * The supplied `OSCP_A2.c` file presents the solution to the multi-process synchronization problem called the **_Producer-consumer problem_**.
 
